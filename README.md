@@ -45,13 +45,26 @@ Resultados da Pesquisa:
 5° : Sum 41 - Faint [Linkin Park Cover] ft. Mike Shinoda [HD]
 
 
-Se quiser refazer a pesquisa, digite 'R', caso não, basta digitar o número do vídeo para baixa-lo:
+Se quiser refazer a pesquisa, digite 'R', caso não, basta digitar o número do vídeo para baixa-lo: 1
 ```
-Quando o número for confirmado, ele dará inicio ao download do vídeo que será salvo na pasta onde o script está sendo executado. Finalizando o processo, ele mostrará uma mensagem de sucesso e perguntará se quer ver uma prévia do vídeo. A prévia funciona usando a lib cv2 para rodar o vídeo, mas ele não roda com áudio, é apenas os frames do vídeo passando. 
+Quando o número for confirmado, será perguntado se você deseja baixar a versão mp3 ou mp4, caso selecione mp4 ele dará inicio ao download do vídeo que será salvo na pasta onde o script está sendo executado, mas caso seja selecionado mp3, ele dará inicio ao download do video para depois converter para mp3, ao final do processo, ele excluirá o arquivo mp4 e deixando apenas o mp3. Finalizando o processo, ele mostrará uma mensagem de sucesso e apertando enter, é possivel voltar para o início do script.
+
+```
+Você deseja baixar o vídeo ou converter para mp3?
+1: Baixar vídeo Mp4
+2: Converter o vídeo para mp3
+```
+
+Mensagem de sucesso quando o vídeo for baixado.
 ```
 Vídeo baixado com sucesso !!!
-Você deseja ver uma prévia do vídeo baixado (não tem som) ? (y/n):
 ```
+Mensagem de sucesso quando o vídeo for convertido.
+```
+Conversão realizada com sucesso!!!
+```
+
+
 
 ## Próxima atualização:
 
