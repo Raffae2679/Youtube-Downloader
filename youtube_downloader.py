@@ -15,6 +15,8 @@ from moviepy.editor import *
 
 
 
+
+
 def baixar_video(link):
 
 	print("Seu vídeo está sendo baixado!")
@@ -31,7 +33,6 @@ def baixar_video(link):
 
 	clear()
 	main()
-
 	
 def baixar_musica(nome, link):
 
@@ -41,8 +42,8 @@ def baixar_musica(nome, link):
 
 	video_baixado = video.download()
 
-	mp4_file = nome+".mp4"
-	mp3_file = nome+".mp3"
+	mp4_file = procura_nome(nome)
+	mp3_file = mp4_file[:-4]+".mp3"
 
 	print("Aguarde enquanto convertemos o vídeo para mp3...")
 
@@ -133,12 +134,23 @@ def pesquisa():
 		elif choice == "2":
 			baixar_musica(ytb_nome[escolha].text, ytb_link[escolha].get_attribute('href'))
 
+def procura_nome(nome):
+
+	files = os.listdir()
+
+	for nomes in files:
+
+		if nome[:20] in nomes:
+
+			return nomes
+
+
+
+
+
 
 	
-
-
-
-
 main()
 
 
+	
